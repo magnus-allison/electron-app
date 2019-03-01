@@ -1,0 +1,326 @@
+html,
+body {
+    margin: 0px;
+    overflow: hidden;
+    background: #2f3640;
+}
+
+#overlay {
+    position: fixed;
+    /* Sit on top of the page content */
+    display: none;
+    /* Hidden by default */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.82);
+    /* Black background with opacity */
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+}
+
+#overlay_box {
+    position: absolute;
+    top: calc(50% - 130px);
+    left: calc(50% - 304px);
+    width: 606px;
+    border: 1px solid #0fbcf9;
+    height: 260px;
+    background: #2f3640;
+    cursor: default;
+
+}
+
+#overlay_title {
+
+    position: absolute;
+    top: calc(50% - 151px);
+    left: calc(50% - 304px);
+    height: 21px;
+    background: #0fbcf9;
+    text-transform: uppercase;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: 300;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    letter-spacing: 1px;
+    padding-left: 3px;
+    cursor: default;
+
+}
+
+#overlay_accept {
+    
+    position: absolute;
+    top: calc(50% + 133px);
+    left: calc(50% + 180px);
+    height: 21px;
+    width: 51px;
+    background: #27ae60;
+    text-transform: uppercase;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: 300;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    letter-spacing: 1px;
+    padding-left: 3px;
+    cursor: pointer;
+    
+}
+
+#overlay_decline {
+    
+    position: absolute;
+    top: calc(50% + 133px);
+    left: calc(50% + 236px);
+    height: 21px;
+    width: 65px;
+    background: #c0392b;
+    text-transform: uppercase;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: 300;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    letter-spacing: 1px;
+    padding-left: 3px;
+    cursor: pointer;
+    
+}
+
+#custom_url {
+    position: absolute;
+    top: calc(50% - 90px);
+    left: calc(50% - 230px);
+    font-family: Tahoma, Geneva, sans-serif;
+    letter-spacing: 1px;
+    padding-left: 3px;
+    color: black;
+    width: 502px;
+    height: 21px;
+    border: 1px solid #0fbcf9;
+    color: #444;
+}
+
+#button_url {
+    position: absolute;
+    top: calc(50% - 90px);
+    left: calc(50% - 280px);
+    width: 40px;
+    height: 21px;
+    background: #0fbcf9;
+    text-transform: uppercase;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: 300;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    letter-spacing: 1px;
+    padding-left: 3px;
+}
+
+#button_file {
+    position: absolute;
+    top: calc(50% - 55px);
+    left: calc(50% - 280px);
+    width: 40px;
+    height: 21px;
+    background: #0fbcf9;
+    text-transform: uppercase;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: 300;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    letter-spacing: 1px;
+    padding-left: 3px;
+}
+
+input[type="file"] {
+    position: absolute;
+    top: calc(50% - 55px);
+    left: calc(50% - 230px);
+    padding-left: 3px;
+    color: black;
+    width: 50px;
+    height: 21px;
+    background: red;
+    opacity: 0;
+}
+
+#button_upload {
+    position: absolute;
+    top: calc(50% - 55px);
+    left: calc(50% - 230px);
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding-left: 3px;
+    color: #444;
+    width: 45px;
+    height: 18px;
+    background: white;
+    cursor: pointer;
+    border: 1px solid #0fbcf9;
+    padding-top: 2px;
+}
+
+#upload_status {
+    position: absolute;
+    top: calc(50% - 63px);
+    left: calc(50% - 170px);
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #c0392b;
+}
+
+#button_templates {
+    position: absolute;
+    top: calc(50% + 10px);
+    left: calc(50% - 280px);
+    width: 97px;
+    height: 21px;
+    background: #0fbcf9;
+    text-transform: uppercase;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: 300;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    letter-spacing: 1px;
+    padding-left: 3px;
+}
+
+.stock_template {
+    
+    position: absolute;
+    top: calc(50% + 40px);
+    width: 110px;
+    height: 60px;
+    background: #2f3640;;
+    border: 1px solid #888;
+    cursor: pointer;
+    
+}
+
+#stock_1 {
+        left: calc(50% - 280px);  
+        background: url('beach.jpg');
+        background-size: cover;
+}
+#stock_2 {
+        left: calc(50% - 160px);  
+        background: url('forrest.jpg');
+        background-size: cover;
+}
+#stock_3 {
+        left: calc(50% - 40px);  
+        background: url('desert.jpg');
+        background-size: cover;
+}
+
+.stock_message {
+    
+    position: absolute;
+    top: calc(50% + 105px);
+    width: 110px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #666;
+    text-align:center;
+    
+}
+
+#stock_1_message {
+        left: calc(50% - 279px);   
+}
+
+#stock_2_message {
+    left: calc(50% - 158px);   
+}
+
+#stock_3_message {
+    left: calc(50% - 39px);   
+}
+
+
+#preview_message {
+    position: absolute;
+    top: calc(50% - 5px);
+    left: calc(50% + 90px);
+    width: 68px;
+    height: 18px;
+    background: #0fbcf9;
+    text-transform: uppercase;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    letter-spacing: 1px;
+    padding-left: 3px;
+}
+
+#preview {
+    
+    position: absolute;
+    top: calc(50% - 5px);
+    left: calc(50% + 90px);
+    width: 190px;
+    height: 105px;
+    background: black;
+    border: 1px solid #0fbcf9;
+    margin: 0px;
+    padding: 0px;
+       
+}
+
+.canvas_placeholder {
+    width: 300px;
+    height: 180px;
+    margin-top: 12px;
+    margin-left: 4px;
+    float: left;
+
+}
+
+.canvas_placeholder:nth-child(1) {
+    margin-left: 12px;
+}
+
+.canvas_message {
+
+    height: 21px;
+    background: #0fbcf9;
+    position: relative;
+    text-transform: uppercase;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: 300;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    letter-spacing: 1px;
+    padding-left: 3px;
+    top: -180px;
+    cursor: pointer;
+}
+
+#ref_canvas,
+#compare_canvas,
+#desired_canvas {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+}
+
+#output_canvas {
+
+    margin-top: 4px;
+    margin-left: 12px;
+    width: 908px;
+    height: 511px;
+}

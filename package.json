@@ -1,0 +1,17 @@
+{
+  "name": "chroma",
+  "version": "1.0.0",
+  "description": "Chroma key desktop",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . Magnus-App --prune --platform=darwin --arch=x64 --verson=0.27.2",
+    "build-win": "electron-packager . Magnus-App --prune --platform=win32 --arch=xia32 --version=0.30.0"
+  },
+  "author": "Magnus Allison",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^4.0.0",
+    "electron-packager": "^11.2.1"
+  }
+}
