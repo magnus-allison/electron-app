@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./stylesheet/style.css" type="text/css" />
+        <link rel="stylesheet" href="./stylesheet/nav-settings.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <script src="./scripts/jquery-3.3.1.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  
+        <script src="./scripts/load-ui.js"></script>
+        <script src="./scripts/video-load.js"></script>
+    </head>
+    <body onload="splash(3000)">
+        <div id="#splashscreen"></div>
+        <div id="nav-left">
+
+            <h3 class='nav-left-title' id='capture-screens-title'>
+                <i class="far fa-minus-square"></i>
+                Capture Screens
+            </h3>
+            <section id="capture-screens">
+                <div class="nav-canvas-placeholder">
+                    <video playsinline autoplay class='nav-canvas' id="live-input"></video>
+                </div>
+
+                <div class="nav-canvas-placeholder">
+                        <canvas class='nav-canvas'></canvas>
+                </div>
+
+                <div class="nav-canvas-placeholder">
+                        <canvas class='nav-canvas'></canvas>
+                </div>
+            </section>
+
+            <h3 class='nav-left-title' id='video-settings-title'>
+                    <i class="far fa-minus-square"></i>
+                    Video Settings
+            </h3>
+            <section id="video-settings">
+                <div class='nav-setting'>
+                    <h4 class='setting-title'>
+                        Pixel Tolerance
+                    </h4>
+                    <input type="range" min="1" max="10" value="3" class="nav-slider">
+                </div>
+
+                <div class='nav-setting'>
+                        <h4 class='setting-title'>
+                            Pixel Calculation/S
+                        </h4>
+                        <input type="range" min="10" max="120" value="60" class="nav-slider">
+                </div>
+
+                <div class='nav-setting'>
+                        <h4 class='setting-title'>
+                            Antialiasing
+                        </h4>
+                        <label class="nav-switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                </div>
+
+                <div class='nav-setting'>
+                        <h4 class='setting-title'>
+                            Composite Operation
+                        </h4>
+                        <label class="nav-switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                </div>
+            </section>
+
+            <h3 class='nav-left-title' id='user-settings-title'>
+                    <i class="far fa-plus-square"></i>
+                    User Settings
+            </h3>
+
+            <section id="user-settings" style="display:none">
+                <div class='nav-setting'>
+                    <h4 class='setting-title'>
+                        Placeholder
+                    </h4>
+                    <input type="range" min="1" max="4" value="4" class="nav-slider">
+                </div>
+            </section>
+
+            <h3 class='nav-left-title' id='help-support-title'>
+                    <i class="far fa-plus-square"></i>
+                    Help & Support
+            </h3>
+
+            <section id="user-settings" style="display:none">
+                <div class='nav-setting'>
+                    <h4 class='setting-title'>
+                        Placeholder
+                    </h4>
+                    <input type="range" min="1" max="4" value="4" class="nav-slider">
+                </div>
+            </section>
+
+        </div>
+        <div class="canvas-placeholder">
+
+            <canvas></canvas>
+
+        </div>
+    </body>
+    
+    
+</html>

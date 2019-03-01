@@ -1,46 +1,41 @@
 
-
-//TODO MAKE thE BORDER COLOUR INDICATE LOAD STATUS
-
-
 var paused = false;
 
 function init() {
 
     //Loading the Camera (Ask for permissions)
  
-   // /*
+    /*
     if (navigator.mediaDevices.getUserMedia) {       
     navigator.mediaDevices.getUserMedia({video: true})
       .then(function(stream) {
         video.srcObject = stream;
       })
-      .catch(function(err0r) {
+      .catch(function(error) {
         console.log("Something went wrong!");
       });
     }
     
-   // */
+    */
     
-    
-    refCanvas = document.getElementById('ref_canvas');
-    compareCanvas = document.getElementById('compare_canvas');
-    desiredCanvas = document.getElementById('desired_canvas');
-    outputCanvas = document.getElementById('output_canvas');
+    var refCanvas = document.getElementById('ref_canvas');
+    var compareCanvas = document.getElementById('compare_canvas');
+    var desiredCanvas = document.getElementById('desired_canvas');
+    var outputCanvas = document.getElementById('output_canvas');
 
-    refContext = refCanvas.getContext('2d');
-    desiredContext = desiredCanvas.getContext('2d');
-    compareContext = compareCanvas.getContext('2d');
-    outputContext =outputCanvas.getContext('2d');
+    var refContext = refCanvas.getContext('2d');
+    var desiredContext = desiredCanvas.getContext('2d');
+    var compareContext = compareCanvas.getContext('2d');
+    var outputContext =outputCanvas.getContext('2d');
 
     var refImage = new Image();
-        refImage.src = "empty.png";
+        refImage.src = "./Images/empty.png";
         refImage.onload = function () {
             drawImage(refImage ,refCanvas, refContext);
     }
         
      var desiredImage = new Image();
-        desiredImage.src = "empty.png";
+        desiredImage.src = "./Images/empty.png";
         desiredImage.onload = function () {
             drawImage(desiredImage ,desiredCanvas, desiredContext);
     }
@@ -54,13 +49,13 @@ function init() {
     } else {
         video.addEventListener('canplay', playVideo);
         var compareImage = new Image();
-            compareImage.src = "empty.png";
+            compareImage.src = "./Images/empty.png";
             compareImage.onload = function () {
             drawImage(compareImage ,compareCanvas, compareContext);
         }
     }
     var outputImage = new Image();
-        outputImage.src = "empty.png";
+        outputImage.src = "./Images/empty.png";
         outputImage.onload = function () {
             drawImage(outputImage ,outputCanvas, outputContext);
     }
@@ -74,7 +69,7 @@ function init() {
            
            if( document.getElementById("custom_url").value == ""){
                //do nothing
-               document.getElementById("preview").src = "empty.png";
+               document.getElementById("preview").src = "./Images/empty.png";
            }
            else{
                var previewPic = document.getElementById("custom_url").value;

@@ -1,6 +1,6 @@
 {
-  "name": "chroma",
-  "version": "1.0.0",
+  "name": "capturemask",
+  "version": "2.0.1",
   "description": "Chroma key desktop",
   "main": "main.js",
   "scripts": {
@@ -13,5 +13,14 @@
   "devDependencies": {
     "electron": "^4.0.0",
     "electron-packager": "^11.2.1"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magnus-allison/electron-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/magnus-allison/electron-app/issues"
+  },
+  "homepage": "https://github.com/magnus-allison/electron-app#readme"
 }

@@ -9,11 +9,11 @@ let mainWindow;
 // Listen for app to be ready
 app.on('ready', function(){
   // Create new window
-  mainWindow = new BrowserWindow({width: 932, height: 740});
+  mainWindow = new BrowserWindow({width: 870, height: 580});
   // Load html in window
   mainWindow.setResizable(false);
   mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
+    pathname: path.join(__dirname, 'interface/index.html'),
     protocol: 'file:',
     slashes:true
   }));
